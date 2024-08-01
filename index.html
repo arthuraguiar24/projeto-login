@@ -4,19 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
 </head>
 <body>
     <main>
-        <section id="Login">
+        <section id="login">
             <div id="imagem">
-                Foto
+                
             </div>
             <div id="formulario">
-                <h1>Login</h1>
-                <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
+                <h1>Login</h1> <br>
+                <p>Faça login para acessar sua conta.</p> <br>
                 <form action="login.php" method="post">
-                    
+                    <p>
+                        <label for="email"><span class="material-symbols-outlined">home</span></label>
+                        <input type="email" name="email" id="email" required placeholder="E-mail" autocomplete="email">
+                    </p><br>
+                    <p>
+                        <label for="sen"><span class="material-symbols-outlined">Key</span></label>
+                        <input type="password" name="sen" id="sen" required minlength="8" maxlength="20" placeholder="Senha" autocomplete="current-password">
+                    </p><br>
+                    <p>
+                        <input type="submit" value="Enviar">
+                        <input type="reset" value="Limpar">
+                    </p> <br>
+                    <p><a href="#">Esqueceu a senha</a></p> <br>
+                    <p><a href="#">Criar conta</a></p>
                 </form>
             </div>
         </section>
